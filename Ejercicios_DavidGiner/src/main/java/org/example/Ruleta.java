@@ -25,9 +25,9 @@ public class Ruleta {
         int posicion = random.nextInt(0,6);
 
         if (tambor[posicion] == 1) {
-            System.out.println("Has perdido");
+            System.out.println("Has perdido.");
         }else{
-            System.out.println("Has ganado");
+            System.out.println("Has ganado.");
         }
     }
 }
