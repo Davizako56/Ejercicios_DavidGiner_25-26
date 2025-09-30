@@ -6,6 +6,6 @@ public class Main {
     public static void main(String[] args) {
 
         //Actividad.main();
-        Bateria.ejercicio6();
+        Bateria.ejercicio7();
     }
 }
