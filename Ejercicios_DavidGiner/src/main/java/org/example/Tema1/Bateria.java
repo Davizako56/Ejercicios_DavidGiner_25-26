@@ -232,4 +232,39 @@ public class Bateria {
             System.out.println("No tenemos que ir a comprar");
         }
     }
+
+    static void ejercicio8() {
+
+        boolean err = false;
+
+        System.out.println("Introduce la base del triángulo:");
+        int b = entrada.nextInt();
+
+        System.out.println("Intorduze el lado izquierdo el triángulo:");
+        int l = entrada.nextInt();
+
+        System.out.println("Introduce el lado derecho del triángulo:");
+        int r = entrada.nextInt();
+
+        if (b > l && r > l || b > r && l > r) {
+            System.out.println("El triángulo es escaleno");
+
+        }else if (b == l && b == r) {
+            System.out.println("El triángulo es equilátero");
+
+        }else if (r > b && l == r) {
+            System.out.println("El triángulo es isósceles");
+
+        }else{
+            err = true;
+        }
+
+        if (err) {
+            System.out.println("Este triángulo no existe");
+        }
+
+
+
+
+    }
 }
