@@ -6,17 +6,28 @@ public class Practica4 {
     static void main() {
         Scanner entrada = new Scanner(System.in);
 
-        int num1;
-        int num2;
+        int num1 = 0;
+        int num2 = 0;
 
         //El do-while lo he implementado para que si los números no son de tres cifras o son negativos que de error y vuelva a pedir.
 
         do {
-            System.out.println("Introduce el multiplicando (3 cifras)...");
-            num1 = entrada.nextInt();
 
-            System.out.println("Introduce el multiplicador (3 cifras)...");
-            num2 = entrada.nextInt();
+            boolean err = true;
+
+            while (err) {
+                try {
+                    System.out.println("Introduce el multiplicando (3 cifras)...");
+                    num1 = entrada.nextInt();
+
+                    System.out.println("Introduce el multiplicador (3 cifras)...");
+                    num2 = entrada.nextInt();
+                    err = false;
+                }catch(Exception e) {
+                    System.out.println("ERROR: El programa no admite texto...");
+                    entrada.nextLine();
+                }
+            }
 
             if (num1 < 100 || num1 > 999 || num2 < 100 || num2 > 999){
                 System.out.println("ERROR: El número ha de ser de 3 cifras");
@@ -45,8 +56,8 @@ public class Practica4 {
         System.out.println("  x " + num2);
         System.out.println("----------");
         System.out.println("    " + sum1);
-        System.out.println("   " + sum2);
-        System.out.println("+ " + sum3);
+        System.out.println("   " + sum2 + "x");
+        System.out.println("  " + sum3 + "xx");
         System.out.println("----------");
         System.out.println("  " + res);
 
