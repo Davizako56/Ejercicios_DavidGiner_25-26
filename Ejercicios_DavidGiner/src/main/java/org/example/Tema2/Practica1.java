@@ -35,7 +35,7 @@ public class Practica1 {
                             mes = fecha.substring(3,5);
                             año = fecha.substring(6,10);
                             err = false;
-                        }catch(Exception e) {
+                        }catch(IndexOutOfBoundsException e) {
                             System.out.println("ERROR: La fecha de nacimiento no cuadra con el formato");
                             entrada.nextLine();
                         }
