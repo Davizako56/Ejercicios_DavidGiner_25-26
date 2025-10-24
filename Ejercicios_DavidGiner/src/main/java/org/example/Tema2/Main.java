@@ -4,7 +4,7 @@ package org.example.Tema2;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Practica1.main();
+        BateriasBucles.ejercicio8();
 
     }
 }
