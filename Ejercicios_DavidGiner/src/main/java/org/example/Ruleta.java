@@ -21,7 +21,7 @@ public class Ruleta {
             }
         }
 
-        System.out.println("Hay " + contador + " balas en el tambór.");
+        System.out.println("Hay " + contador + (contador == 1 ? " bala" : " balas") + " en el tambor");
         int posicion = random.nextInt(0,6);
 
         if (tambor[posicion] == 1) {
